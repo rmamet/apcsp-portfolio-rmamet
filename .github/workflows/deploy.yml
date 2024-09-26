@@ -1,39 +1,34 @@
-name: Build and Deploy Eleventy Site
+name: Deploy to GitHub Pages
 
-# Trigger the workflow on push to the main branch
 on:
   push:
     branches:
-      - main
+      - main # Change this to your default branch
 
 jobs:
   build:
     runs-on: ubuntu-latest
 
     steps:
-      # Step 1: Checkout the latest code
       - name: Checkout code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v2
 
-      # Step 2: Set up Node.js
       - name: Set up Node.js
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v2
         with:
-          node-version: '16' # or any other version you use
+          node-version: "16" # Change as necessary
 
-      # Step 3: Install dependencies
       - name: Install dependencies
         run: npm install
 
-      # Step 4: Build the Eleventy site
-      - name: Build Eleventy site
-        run: npx eleventy
+      - name: Build
+        run: |
+          # Build the Astro site
+          npx astro build
 
-      # Step 5: Deploy to GitHub Pages
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./_site
-          # Optional: Only deploy to gh-pages for changes to specific branches
-          # branch: gh-pages  # this is the default, but can be specified if needed
+          publish_dir: ./dist
+          publish_branch: gh-pages # Adjust if you have a different branch for GitHub Pages

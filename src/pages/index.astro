@@ -1,27 +1,26 @@
 ---
-import { projects } from '../_data/projects.js';
-
+import { projects } from "../data/projects.js";
 ---
 
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initialScale=1.0">
-  <title>Student Portfolio</title>
-  <script type="module" src="../scripts/main.js"></script>
-</head>
-<body>
-  <h1>Welcome to my Portfolio</h1>
-  <h2>Project Menu</h2>
-  {projects.map(
-    (project) => (
-      <li>
-        <a href={`projects/${project.slug}`}>
-          { project.title }
-          ({ project.assignment })
-        </a>
-      </li>
-    )
-  )}
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initialScale=1.0" />
+    <title>Student Portfolio</title>
+    <script type="module" src="../scripts/main.js"></script>
+  </head>
+  <body>
+    <h1>Welcome to my Portfolio</h1>
+    <h2>Project Menu</h2>
+    {
+      projects.map((project) => (
+        <li>
+          <a href={`projects/${project.slug}`}>
+            {project.title}({project.assignment})
+          </a>
+        </li>
+      ))
+    }
+  </body>
+</html>

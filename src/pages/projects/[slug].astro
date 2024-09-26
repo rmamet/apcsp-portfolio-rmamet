@@ -1,16 +1,34 @@
 ---
+/* Server side code for our template */
 import type { GetStaticPaths } from "astro";
 // src/pages/proj/[slug].astro
-import { projects } from "../../_data/projects.js";
-
-const { slug } = Astro.params;
-
-const project = projects.find((p) => p.slug === slug);
+import { projects } from "../../data/projects.js";
 
 export function getStaticPaths() {
+  /* Return an array of all project slugs 
+  so Astro will know which pages to generate */
   return projects.map((p) => ({ params: { slug: p.slug } }));
 }
+/* Code below will run once per each page when the page
+is built. It will be run on the server, not the client. */
+
+/* Now for this page, we need to get the project data */
+const { slug } = Astro.params;
+
+let project;
+for (let p of projects) {
+  // For each project
+  if (p.slug === slug) {
+    // If the slug matches
+    project = p; // set the project variable to this one
+    break;
+  }
+}
+if (!project) {
+  throw new Error("Project not found");
+}
 ---
+
 <!doctype html>
 <html lang="en">
   <head>
@@ -19,12 +37,9 @@ export function getStaticPaths() {
     <title>{project.title}</title>
   </head>
   <body>
-    {project ? 
     <h1>{project.title}</h1>
     <p>Assignment: {project.assignment}</p>
     <div innerHTML={project.markdown}></div>
     <a href="../">Back to Projects</a>
-    : <p>Project not found</p>
-    }
   </body>
-</html>  
+</html>
