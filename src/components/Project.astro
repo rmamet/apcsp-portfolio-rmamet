@@ -1,0 +1,14 @@
+---
+import Page from "./Page.astro";
+
+let { title, assignment } = Astro.props;
+---
+
+<Page title={title}> 
+  <h1>
+    {title} 
+  </h1>
+  <p>
+    Assignment: {assignment}
+  </p>
+</Page>

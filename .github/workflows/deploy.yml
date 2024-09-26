@@ -23,8 +23,12 @@ jobs:
 
       - name: Build
         run: |
-          # Build the Astro site
-          npx astro build
+           # Extract repo name and set the base URL to /repo-name/
+          REPO_NAME="${GITHUB_REPOSITORY#*/}"
+          echo "REPO_NAME=${REPO_NAME}" >> $GITHUB_ENV
+
+          # Update Astro config base dynamically
+          npx astro build --base "/${REPO_NAME}/"
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3

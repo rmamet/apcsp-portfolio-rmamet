@@ -1,26 +1,19 @@
 ---
-import { projects } from "../data/projects.js";
+import Page from "../components/Page.astro";
 ---
 
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initialScale=1.0" />
-    <title>Student Portfolio</title>
-    <script type="module" src="../scripts/main.js"></script>
-  </head>
-  <body>
-    <h1>Welcome to my Portfolio</h1>
-    <h2>Project Menu</h2>
-    {
-      projects.map((project) => (
-        <li>
-          <a href={`projects/${project.slug}`}>
-            {project.title}({project.assignment})
-          </a>
-        </li>
-      ))
-    }
-  </body>
-</html>
+<Page title="FIXME Portfolio">
+  <h1>Welcome to my Portfolio</h1>
+  <h2>Project Menu</h2>
+  <nav>
+    <ul>
+      <li>
+        <a href="/projects/binary-search/"> Binary Search Project </a>
+      </li>
+      <li>
+        <a href="/projects/portfolio/"> APCSP Portfolio </a>
+      </li>
+      <!-- More projects to come soon! -->
+    </ul>
+  </nav>
+</Page>
