@@ -23,7 +23,7 @@ jobs:
 
       - name: Build
         run: |
-           # Extract repo name and set the base URL to /repo-name/
+          # Extract repo name and set the base URL to /repo-name/
           REPO_NAME="${GITHUB_REPOSITORY#*/}"
           echo "REPO_NAME=${REPO_NAME}" >> $GITHUB_ENV
 
