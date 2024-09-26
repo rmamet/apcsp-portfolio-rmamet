@@ -4,19 +4,17 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initialScale=1.0">
   <title>Student Portfolio</title>
+  <script type="module" src="scripts/main.js"></script>
 </head>
 <body>
-  <h1>Hello World</h1>
+  <h1>Welcome to my Portfolio</h1>
+  <h2>Project Menu</h2>
   {% for project in projects %}
     <li>
       <a href="project/{{project.slug}}">
         {{ project.title }}
         ({{ project.assignment }})
       </a>
-    </li>dump
+    </li>
   {% endfor %}
- 
-All the things: <pre>{{global | dump}}</pre>
-  <h2>Welcome</h2>
-  <p>But why?</p>
 </body>
