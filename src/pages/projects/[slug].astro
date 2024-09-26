@@ -1,0 +1,30 @@
+---
+import type { GetStaticPaths } from "astro";
+// src/pages/proj/[slug].astro
+import { projects } from "../../_data/projects.js";
+
+const { slug } = Astro.params;
+
+const project = projects.find((p) => p.slug === slug);
+
+export function getStaticPaths() {
+  return projects.map((p) => ({ params: { slug: p.slug } }));
+}
+---
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{project.title}</title>
+  </head>
+  <body>
+    {project ? 
+    <h1>{project.title}</h1>
+    <p>Assignment: {project.assignment}</p>
+    <div innerHTML={project.markdown}></div>
+    <a href="../">Back to Projects</a>
+    : <p>Project not found</p>
+    }
+  </body>
+</html>  

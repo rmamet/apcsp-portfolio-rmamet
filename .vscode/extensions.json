@@ -4,7 +4,7 @@
     "esbenp.prettier-vscode",
     "github.copilot",
     "ms-vsliveshare.vsliveshare",
-    "ronnidc.nunjucks",
+    "astro-build.astro",
     "yzhang.markdown-all-in-one" 
   ]
 }

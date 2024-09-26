@@ -4,24 +4,11 @@
     {
       "type": "node",
       "request": "launch",
-      "name": "Launch Eleventy",
-      "program": "${workspaceFolder}/node_modules/@11ty/eleventy/cmd.js",
-      "args": ["--serve"],
-      "cwd": "${workspaceFolder}",
-      "env": {
-        "NODE_ENV": "development"
-      },
-      "outFiles": ["${workspaceFolder}/_site/**/*.js"],
+      "name": "Launch Astro",
+      "program": "${workspaceFolder}/node_modules/.bin/astro",
+      "args": ["dev"],
       "console": "integratedTerminal",
-      "runtimeExecutable": "node"
-    },
-    {
-      "type": "chrome",
-      "request": "launch",
-      "name": "Preview Site",
-      "url": "http://localhost:8080",
-      "webRoot": "${workspaceFolder}/_site",
-      "preLaunchTask": "Launch Eleventy"
+      "internalConsoleOptions": "neverOpen"
     }
   ]
 }

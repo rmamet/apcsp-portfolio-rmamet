@@ -1,4 +1,4 @@
-module.exports = [
+export const projects = [
   {
     slug: "search",
     title: "Personality Quiz",
@@ -25,6 +25,5 @@ My group was amazing!
     <p>Hello world</p>
     <p><b>Example</b> paragraph</p>
     `,
-
   },
 ];

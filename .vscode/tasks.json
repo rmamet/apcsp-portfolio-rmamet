@@ -2,35 +2,15 @@
   "version": "2.0.0",
   "tasks": [
     {
-      "label": "Serve Eleventy",
+      "label": "npm: dev",
       "type": "shell",
-      "command": "npx eleventy --serve",
+      "command": "npm run dev",
       "group": {
         "kind": "build",
         "isDefault": true
       },
-      "problemMatcher": [],
-      "isBackground": true,
-      "presentation": {
-        "reveal": "always",
-        "panel": "shared"
-      },
-      "detail": "Serves the Eleventy site and watches for changes."
-    },
-    {
-      "label": "Build Eleventy",
-      "type": "shell",
-      "command": "npx eleventy",
-      "group": {
-        "kind": "build",
-        "isDefault": false
-      },
-      "problemMatcher": [],
-      "presentation": {
-        "reveal": "always",
-        "panel": "shared"
-      },
-      "detail": "Builds the Eleventy site for production."
+      "problemMatcher": ["$tsc"],
+      "detail": "Run Astro dev server"
     }
   ]
 }
