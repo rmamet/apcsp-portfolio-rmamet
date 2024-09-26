@@ -3,6 +3,8 @@
     "dbaeumer.vscode-eslint",
     "esbenp.prettier-vscode",
     "github.copilot",
-    "ms-vsliveshare.vsliveshare"
+    "ms-vsliveshare.vsliveshare",
+    "ronnidc.nunjucks",
+    "yzhang.markdown-all-in-one" 
   ]
 }

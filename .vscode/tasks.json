@@ -1,23 +1,36 @@
 {
-    "version": "2.0.0",
-    "tasks": [
-      {
-        "label": "Start Live Server",
-        "type": "shell",
-        "command": "npx",
-        "args": ["live-server", "--no-browser","public/"],
-        "problemMatcher": [],
-        "group": {
-          "kind": "build",
-          "isDefault": true
-        },
-        "presentation": {
-          "focus": true,
-          "panel": "shared",
-          "showReuseMessage": false,
-          "clear": true
-        }
-      }
-    ]
-  }
-  
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Serve Eleventy",
+      "type": "shell",
+      "command": "npx eleventy --serve",
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "problemMatcher": [],
+      "isBackground": true,
+      "presentation": {
+        "reveal": "always",
+        "panel": "shared"
+      },
+      "detail": "Serves the Eleventy site and watches for changes."
+    },
+    {
+      "label": "Build Eleventy",
+      "type": "shell",
+      "command": "npx eleventy",
+      "group": {
+        "kind": "build",
+        "isDefault": false
+      },
+      "problemMatcher": [],
+      "presentation": {
+        "reveal": "always",
+        "panel": "shared"
+      },
+      "detail": "Builds the Eleventy site for production."
+    }
+  ]
+}

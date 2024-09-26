@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initialScale=1.0">
+  <title>Student Portfolio</title>
+</head>
+<body>
+  <h1>Hello World</h1>
+  {% for project in projects %}
+    <li>
+      <a href="project/{{project.slug}}">
+        {{ project.title }}
+        ({{ project.assignment }})
+      </a>
+    </li>dump
+  {% endfor %}
+ 
+All the things: <pre>{{global | dump}}</pre>
+  <h2>Welcome</h2>
+  <p>But why?</p>
+</body>
