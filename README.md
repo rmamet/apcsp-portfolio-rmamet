@@ -2,29 +2,33 @@
 
 Welcome to the Portfolio Project.
 
-This is an example of a modern website, using what is called a "static site generator" which is
-a JavaScript system that generates a webpage that can be hosted easily.
+This is an example of a modern website, using a "static site generator,"
+a JavaScript system that generates a webpage that can be hosted easily online.
 
-## About the Folders
+For this project, we have some learning goals and some basic requirements.
 
-### src/
+## Goals
 
-The src folder contains all of your source code. It is where your project will live.
+- Build a published portfolio where they can highlight their coding work.
+- Learn about the fundamentals of how a website is designed.
+- Learn how to use open source libraries to enhance their work.
+- Learn the fundamentals of code reuse and the DRY (Don't Repeat Yourself) principle.
+- Learn the basics of licensing models.
 
-## src/pages/
+## Requirements
+- Create a portfolio with at least 3 pages and a template you can expand as the course grows.
+- Customize the look and feel of your page so it is unique.
+- Use at least one library you researched independently to enhance your website.
+- Include an "acknowledgements" page with a list of libraries and sources you used.
+- Include a copyright statement with a license.
 
-The src/pages/ folder contains the source code for each page in your website. Subfolders
-in this will become subfolders in your website.
+## Instructions:
+- [Project Overview & Structure](./instructions/1-overview.md)
+- [Making your first changes](./instructions/2-first-change.md)
+- [Including a library](./instructions/3-library-instructions.md)
+- [Researching more libraries](./instructions/4-more-libraries.md)
+- [Creating Components](./instructions/5-create-component.md)
+- [Adding a License](./instructions/6-licensing.md)
 
-In our default organization, we have a root page (index.astro) and then 
 
-## Installing Your First Library
-
-To show you how we go about installing modern components, we're going to use
-node package manager to install a simple style library called picocss.
-
-```sh
-npm install @picocss/pico
-```
-
-Once this is done, we will have picocss in our node_modules.
+**Acknowledgment:** Note, I used GPT 4o and the new GPT-o1 to help me generate instructions and select and use the "astro" framework for this project.
