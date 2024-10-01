@@ -1,5 +1,7 @@
+import "../styles/styles.css";
 // Add imports here
 
+console.log("What?");
 console.log("Hello world, from main.js!");
 if (typeof window !== "undefined") {
   // Put code that runs ONLY in the browser here -- this is most likely where
