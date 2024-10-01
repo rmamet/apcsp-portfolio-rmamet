@@ -29,6 +29,8 @@ At this point, you should see the change reflected in the browser in two places:
 words from the `<h1>` tag and then if you open the page in its own tab, you'll see the title you entered
 in the tab.
 
+To learn more about HTML, read my [About Markup](./A-about-markup.md) intro.
+
 ### About Astro Component's
 
 `<Page title="Ava's Portfolio">` was your first use of a _component_, which is a way web programmers
