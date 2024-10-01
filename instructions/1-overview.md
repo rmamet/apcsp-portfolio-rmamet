@@ -22,6 +22,15 @@ Understanding the project structure is key to making changes effectively. Hereâ€
   a Project component with the idea that you'd have a template for each project you highlight
   on your portfolio.
 
+  ### `src/styles/styles.css`
+
+  This file is *imported* in your `main.js` file which is built with vite, a system which can bundle various libraries into your final
+  website code.
+
+  You can write CSS directly in this file if you learn some CSS for this
+  project, or if libraries require you to add CSS import statements, you
+  can add them to this file so your site will build correctly.
+
 ## Running the Project to Test It
 
 You should be able to run your project by hitting "Launch Astro" from the Run and Debug side-panel.
