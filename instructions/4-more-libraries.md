@@ -1,5 +1,7 @@
 # More Libraries
 
+[Back to Overview](../README.md) | [Next: Creating a Component](./5-create-component.md)
+
 Now that you've [installed your first library](./3-library-instructions.md), you might want to explore other libraries to add custom styles, effects, and more to your portfolio.
 
 There are libraries for nearly everything you can imagine. If you've 

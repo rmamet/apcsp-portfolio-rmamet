@@ -1,4 +1,6 @@
-## Making Your First Change.
+# Making Your First Change.
+
+[Back to Overview](../README.md) | [Next: Your first library](./3-library-instructions.md) 
 
 Let's assume you've already got the project running by following
 the instructions in the [overview](./1-overview.md).

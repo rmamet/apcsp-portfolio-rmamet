@@ -1,5 +1,7 @@
 # Adding a Library: Installing Your First Library
 
+[Back to Overview](../README.md) | [Next: Finding more libraries](./4-more-libraries.md)
+
 Enhance your website by adding third-party libraries. Let's start by installing a simple style library called **PicoCSS** and an animate-on-scroll library called AOS (Animate-On-Scroll).
 
 **PicoCSS** will automatically handle some basic
