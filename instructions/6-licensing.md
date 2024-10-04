@@ -1,5 +1,7 @@
 # Adding a License to Your Portfolio
 
+[Back to Overview](../README.md) | [Next: About Image](./B-about-images.md)
+
 When creating a portfolio, it’s important to include a **license** that explains how others can use, share, or adapt your work. Adding a license helps protect your work while making it clear what others can (or cannot) do with it.
 
 In this project, we recommend using a **Creative Commons** license. Creative Commons licenses are easy to understand and commonly used for sharing creative work, including code, websites, and other digital content. While software projects tend to use software licenses such as the [GNU Public License]() of the [MIT License](), content-based projects such as writing or artistic works are more typically licensed with Creative Commons licenses. What's more, the Creative Commons maintains a tool that makes it easy to decide what license you want to use and to generate HTML code to add to your page to license your work.

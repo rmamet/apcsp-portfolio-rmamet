@@ -30,6 +30,7 @@ For this project, we have some learning goals and some basic requirements.
 - [Researching more libraries](./instructions/4-more-libraries.md)
 - [Creating Components](./instructions/5-create-component.md)
 - [Adding a License](./instructions/6-licensing.md)
+- [Adding an image](./instructions/B-about-images.md)
 
 
 **Acknowledgment:** *Note, I used GPT 4o and the new GPT-o1 to help me generate instructions and select and use the "astro" framework for this project! You will likely want to use AI to help you on this project as

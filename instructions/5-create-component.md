@@ -1,9 +1,12 @@
-### More About Components
+# About Components
+
+[Back to Overview](../README.md) | [Next: Licensing](./6-licensing.md)
 
 In this tutorial, we’ll learn how to create your own component. This project came pre-built with
 two components: one for the Page (`Page.astro`) and one for your project page (`Project.astro`).
 
 ---
+
 #### Expanding Components
 
 Now you probably noticed how we pass data into a component using properties, like:
@@ -40,7 +43,7 @@ Any time you find yourself copy/pasting a lot of code, you probably should be th
 
 Let's imaging that you decided you wanted a fancier list of projects on your landing page. On the template I gave you, there is a simple link for each project, but what if you wanted an image and a blurb layed out with the link in a fancy layout.
 
-Let's assume you want all the projects to look the same for consistency: this is a perfect time to make a *new* component! For our example, we'll call it `NavItem`
+Let's assume you want all the projects to look the same for consistency: this is a perfect time to make a _new_ component! For our example, we'll call it `NavItem`
 
 ### Step 1: Creating the "NavItem" Component
 
@@ -134,4 +137,3 @@ Now that we’ve created the **NavItem** component, let’s update your existing
 - **Components**: You’ve seen how components make it easier to structure and organize your code by reusing common elements.
 
 ---
-
