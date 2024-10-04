@@ -14,7 +14,17 @@ they first scroll onto the screen.
 
 ### Step 1: Install PicoCSS via npm
 
-Run the following command in your project directory:
+To install new libraries, you'll need to run the `npm` command from a `terminal`. This is a
+text-based user interface that has existed in computing since well before the typical
+graphical interfaces we know today, but it is still used by programmers frequently.
+
+To open a terminal in Github Codespaces, you'll find the "Terminal" tab next to where
+you've opened "Ports" before at the bottom of the screen. If you're already running your
+project, you'll need to open a new terminal by clicking on the "+" icon which will open
+up a command promps where you can type your command.
+Typically the prompt will end with a `$`.
+
+Then, type this command:
 
 ```sh
 npm install @picocss/pico
@@ -30,13 +40,15 @@ import "@picocss/pico/css/pico.min.css";
 
 ### Step 3: Use PicoCSS in Your HTML
 
-You can now use PicoCSS classes in your HTML files. For example, to center your content and set a reasonable width:
+You can now use PicoCSS classes in the HTML in your .astro files. For example, to center your content and set a reasonable width, you can add the following:
 
 ```html
 <main class="container">
   <!-- Your content here -->
 </main>
 ```
+
+You can also take a look at the PicoCSS documentation to see how to make tooltips, dropdown menus, and other basic UI elements.
 
 **Reference:** [PicoCSS Documentation](https://picocss.com/docs/container)
 
