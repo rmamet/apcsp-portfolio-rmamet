@@ -43,10 +43,10 @@ const App = () => {
                   Image="/fleeber.png"
                 >
                   This project was made to use and learn binary search, having a
-                  limited about of final outcomes, and seeing the maximum needed
-                  to get to that outcome with sorting. The easiest way of doing
-                  so was with a pile of if statements, to make logical outcomes
-                  from a users input.
+                  limited amount of final outcomes, and seeing the maximum
+                  needed to get to that outcome with sorting. The easiest way of
+                  doing so was with a pile of if statements, to make logical
+                  outcomes from a user's input.
                 </Projects>
               </div>
               <div className="slide" data-anchor="slide3">
