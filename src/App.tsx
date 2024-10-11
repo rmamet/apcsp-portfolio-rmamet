@@ -23,9 +23,9 @@ const App = () => {
                 </div>
                 <div className="flex-auto p-8 md:w-16 md:text-left md:p-2 m-auto pt-4 pb-4">
                   <h1>About Me</h1>
-                  <p>
+                  <p className="w-full md:w-1/2 h-auto pl-2 pr-2 ml-auto mr-auto">
                     Hello!! I'm Roee Mamet! I'm an ambitious student learning at
-                    Innovation Acadamy Charter School
+                    Innovation Academy Charter School
                   </p>
                 </div>
               </div>
@@ -66,7 +66,7 @@ const App = () => {
             </div>
             <div className="section">
               <h1>Contact</h1>
-              <p>
+              <p className="w-full md:w-1/2 h-auto pl-2 pr-2 ml-auto mr-auto">
                 Email:{" "}
                 <a
                   className="underline"
@@ -76,7 +76,7 @@ const App = () => {
                   rmamet@rmamet.xyz
                 </a>
               </p>
-              <p>
+              <p className="w-full md:w-1/2 h-auto pl-2 pr-2 ml-auto mr-auto">
                 Github:{" "}
                 <a
                   className="underline"
@@ -90,7 +90,7 @@ const App = () => {
             <div className="section">
               <div className="slide" data-anchor="slide1">
                 <h1>Footer</h1>
-                <p>
+                <p className="w-full md:w-1/2 h-auto pl-2 pr-2 ml-auto mr-auto">
                   This is the boring stuff. Continue to the right for
                   attributions, copyright notice, and anything else I might add
                   later
