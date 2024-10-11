@@ -41,9 +41,11 @@ h1{
 .fp-controlArrow:hover {
   opacity: 1;
   transition: opacity .5s;
+  color: antiquewhite;
 }
 
 .fp-controlArrow {
     opacity: 0.5;
     transition: opacity .5s;
+    color: #fff;
 }
