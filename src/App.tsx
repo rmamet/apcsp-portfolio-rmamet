@@ -23,7 +23,7 @@ const App = () => {
                 </div>
                 <div className="flex-auto p-8 md:w-16 md:text-left md:p-2 m-auto pt-4 pb-4">
                   <h1>About Me</h1>
-                  <p className="w-full md:w-1/2 h-auto pl-2 pr-2 ml-auto mr-auto">
+                  <p>
                     Hello!! I'm Roee Mamet! I'm an ambitious student learning at
                     Innovation Academy Charter School
                   </p>
