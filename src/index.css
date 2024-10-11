@@ -37,3 +37,13 @@ h1{
 .fp-watermark{
     display: none;
 }
+
+.fp-controlArrow:hover {
+  opacity: 1;
+  transition: opacity .5s;
+}
+
+.fp-controlArrow {
+    opacity: 0.5;
+    transition: opacity .5s;
+}

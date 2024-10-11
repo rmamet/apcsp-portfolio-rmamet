@@ -8,7 +8,7 @@ const App = () => {
     <div className="App">
       <ReactFullpage
         credits={{ enabled: false }}
-        navigation={true}
+        // navigation={true}
         anchors={["front", "about", "projects", "contact", "footer"]}
         render={() => (
           <ReactFullpage.Wrapper>
@@ -99,7 +99,7 @@ const App = () => {
               <div className="slide" data-anchor="slide2">
                 <div>
                   <h1>Attributions</h1>
-                  <p>
+                  <p className="w-full md:w-1/2 h-auto pl-2 pr-2 ml-auto mr-auto">
                     This portfolio uses fullPage.js which is licensed under{" "}
                     <a
                       className="underline"
@@ -109,7 +109,7 @@ const App = () => {
                       GPLv3
                     </a>
                   </p>
-                  <p>
+                  <p className="w-full md:w-1/2 h-auto pl-2 pr-2 ml-auto mr-auto">
                     This portfolio uses TailwindCSS which is licensed under the{" "}
                     <a
                       className="underline"
@@ -120,7 +120,7 @@ const App = () => {
                     </a>
                   </p>
                   <br />
-                  <p>
+                  <p className="w-full md:w-1/2 h-auto pl-2 pr-2 ml-auto mr-auto">
                     If you feel like any content on this site infringes on your
                     copyright, please email{" "}
                     <a className="underline">rmamet [at] rmamet.xyz</a>, and the
