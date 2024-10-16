@@ -12,9 +12,19 @@ const App = () => {
         anchors={["front", "about", "projects", "contact", "footer"]}
         render={() => (
           <ReactFullpage.Wrapper>
-            <div className="section">
-              <h1>Roee's</h1>
-              <h2>Portfolio</h2>
+            <div className="section" style={{ height: "100%" }}>
+              <div className="flex justify-stretch flex-col h-screen">
+                <div className="flex-auto"></div>
+                <div className="place-content-center flex-auto">
+                  <h1>Roee's</h1>
+                  <h2>Portfolio</h2>
+                </div>
+                <div className="flex-auto place-content-center">
+                  <p className="text-xs text-gray-200">
+                    Press Down Arrow or Scroll
+                  </p>
+                </div>
+              </div>
             </div>
             <div className="section">
               <div className="flex flex-col md:flex-row">
