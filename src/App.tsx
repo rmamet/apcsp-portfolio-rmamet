@@ -13,7 +13,7 @@ const App = () => {
         render={() => (
           <ReactFullpage.Wrapper>
             <div className="section" style={{ height: "100%" }}>
-              <div className="flex justify-stretch flex-col h-screen">
+              <div className="flex justify-stretch flex-col h-svh">
                 <div className="flex-auto"></div>
                 <div className="place-content-center flex-auto">
                   <h1>Roee's</h1>
