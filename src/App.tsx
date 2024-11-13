@@ -2,6 +2,7 @@ import ReactFullpage from "@fullpage/react-fullpage";
 import LicenseInfo from "./LicenseInfo";
 import Projects from "./Projects";
 import Joke from "./Joke";
+import Contact from "./Contact";
 
 const App = () => {
   return (
@@ -96,6 +97,7 @@ const App = () => {
                   https://github.com/rmamet
                 </a>
               </p>
+              <Contact />
             </div>
             <div className="section">
               <div className="slide" data-anchor="slide1">
