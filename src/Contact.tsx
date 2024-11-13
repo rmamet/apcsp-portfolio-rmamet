@@ -82,6 +82,7 @@ const Contact = () => {
       <textarea
         id="message"
         placeholder="Message"
+        maxLength={1000}
         className="shadow appearance-none border rounded w-full my-1 py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
         value={message}
         onChange={(e) => setMessage(e.target.value)}
