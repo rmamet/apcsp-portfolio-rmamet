@@ -74,6 +74,18 @@ const App = () => {
                   slide-style layout of the website.
                 </Projects>
               </div>
+              <div className="slide" data-anchor="slide4">
+                <Projects
+                  ProjName="Evolution of the Web Project"
+                  DueDate="Nov. 8th, 2024"
+                  Image="/evoOfWeb.png"
+                >
+                  This project was to research, and tell our class about
+                  something that helped evolve the web to be how we know it
+                  today. For our group, we researched WiFi, and how it works and
+                  was invented.
+                </Projects>
+              </div>
             </div>
             <div className="section">
               <h1>Contact</h1>

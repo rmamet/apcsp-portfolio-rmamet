@@ -11,6 +11,10 @@ const Contact = () => {
     e.preventDefault(); // Prevent the default form submission
 
     if (honeypot != "") {
+      setName("");
+      setEmail("");
+      setSubject("");
+      setMessage("");
       return;
     }
 
