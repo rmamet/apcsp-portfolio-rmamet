@@ -21,7 +21,7 @@ const App = () => {
                   <h2>Portfolio</h2>
                 </div>
                 <div className="flex-auto place-content-center">
-                  <p className="text-xs text-white animate-fade w-auto">
+                  <p className="text-s text-white animate-fade w-auto">
                     Press Down Arrow or Scroll
                   </p>
                 </div>
