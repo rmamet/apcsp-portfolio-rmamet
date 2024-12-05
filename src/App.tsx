@@ -65,7 +65,7 @@ const App = () => {
                   ProjName="This Portfolio"
                   DueDate="Oct. 17th, 2024"
                   ActiveLink="https://rmamet.xyz"
-                  GHLink="https://github.com/IACS-CS/apcsp-portfolio-rmamet"
+                  GHLink="https://github.com/rmamet/apcsp-portfolio-rmamet"
                   Image="/portfolio.png"
                 >
                   The goal for this project is to have a place to introduce
@@ -84,6 +84,20 @@ const App = () => {
                   something that helped evolve the web to be how we know it
                   today. For our group, we researched WiFi, and how it works and
                   was invented.
+                </Projects>
+              </div>
+              <div className="slide" data-anchor="slide5">
+                <Projects
+                  ProjName="Turtle Project"
+                  DueDate="Dec. 3rd, 2024"
+                  ActiveLink="https://turtle.rmamet.xyz"
+                  GHLink="https://github.com/IACS-CS/mini-turtle-project-fleeberv2-0"
+                  Image="/bag.png"
+                >
+                  The goal for this project was to learn the functions and uses
+                  of a turtle library, along with learning how to make our own
+                  functions instead of running everything in the main code loop.
+                  My group made a bag with a `:3` symbol on it.
                 </Projects>
               </div>
             </div>
