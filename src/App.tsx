@@ -31,6 +31,7 @@ const App = () => {
               <div className="flex flex-col md:flex-row">
                 <div className="flex-auto p-8 md:w-16 pt-4 pb-4">
                   <img src="/Roee.jpg" className="rounded-lg"></img>
+                  <p>Photo Credit: Zohar Mamet</p>
                 </div>
                 <div className="flex-auto p-8 md:w-16 md:text-left md:p-2 m-auto pt-4 pb-4">
                   <h1>About Me</h1>
