@@ -11,7 +11,7 @@ const App = () => {
         credits={{ enabled: false }}
         // navigation={true}
         anchors={["front", "about", "projects", "contact", "footer"]}
-        recordHistory=false
+        recordHistory={false} 
         render={() => (
           <ReactFullpage.Wrapper>
             <div className="section" style={{ height: "100%" }}>
