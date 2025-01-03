@@ -11,12 +11,12 @@ const App = () => {
         credits={{ enabled: false }}
         // navigation={true}
         anchors={["front", "about", "projects", "contact", "footer"]}
-        recordHistory={false} 
-        loopTop={true} 
+        recordHistory={false}
+        loopTop={true}
         loopBottom={true}
         render={() => (
           <ReactFullpage.Wrapper>
-            <div className="section" style={{ height: "100%" }}>
+            <div className="section">
               <div className="flex justify-stretch flex-col h-svh">
                 <div className="flex-auto"></div>
                 <div className="place-content-center flex-auto">
@@ -33,7 +33,11 @@ const App = () => {
             <div className="section">
               <div className="flex flex-col md:flex-row">
                 <div className="flex-auto p-8 md:w-16 pt-4 pb-4">
-                  <img src="/Roee.jpg" className="rounded-lg"></img>
+                  <img
+                    alt="An image of Roee."
+                    src="/Roee.jpg"
+                    className="rounded-lg"
+                  ></img>
                   <p>Photo Credit: Zohar Mamet</p>
                 </div>
                 <div className="flex-auto p-8 md:w-16 md:text-left md:p-2 m-auto pt-4 pb-4">
@@ -120,6 +124,7 @@ const App = () => {
               <p className="w-full md:w-1/2 h-auto pl-2 pr-2 ml-auto mr-auto">
                 Github:{" "}
                 <a
+                  rel="noopener noreferrer"
                   className="underline"
                   href="https://github.com/rmamet"
                   target="_blank"
@@ -144,6 +149,7 @@ const App = () => {
                   <p className="w-full md:w-1/2 h-auto pl-2 pr-2 ml-auto mr-auto">
                     This portfolio uses fullPage.js which is licensed under{" "}
                     <a
+                      rel="noopener noreferrer"
                       className="underline"
                       href="https://github.com/alvarotrigo/fullPage.js/blob/master/LICENSE"
                       target="_blank"
@@ -154,6 +160,7 @@ const App = () => {
                   <p className="w-full md:w-1/2 h-auto pl-2 pr-2 ml-auto mr-auto">
                     This portfolio uses TailwindCSS which is licensed under the{" "}
                     <a
+                      rel="noopener noreferrer"
                       className="underline"
                       href="https://github.com/tailwindlabs/tailwindcss/blob/next/LICENSE"
                       target="_blank"
