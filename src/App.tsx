@@ -12,7 +12,8 @@ const App = () => {
         // navigation={true}
         anchors={["front", "about", "projects", "contact", "footer"]}
         recordHistory={false} 
-        continuousVertical={true}
+        loopTop={true} 
+        loopBottom={true}
         render={() => (
           <ReactFullpage.Wrapper>
             <div className="section" style={{ height: "100%" }}>
