@@ -5,15 +5,44 @@ import Joke from "./Joke";
 import Contact from "./Contact";
 
 const App = () => {
+  const navClasses =
+    "cursor-pointer flex-auto w-1 inline-block text-black bg-white active:text-white active:bg-slate-700 hover:bg-slate-300 p-2";
   return (
-    <div className="App">
+    <div className="App w-full">
+      <div
+        id="menu"
+        className="fixed top-0 left-0 z-50 p-0 m-0 w-full bg-white opacity-85 select-none"
+      >
+        <ul className="flex justify-center align-middle text-center">
+          {[
+            { anchor: "front", label: "Front" },
+            { anchor: "about", label: "About" },
+            { anchor: "projects", label: "Projects" },
+            { anchor: "contact", label: "Contact" },
+            { anchor: "footer", label: "Footer" },
+          ].map((item) => (
+            <li
+              key={item.anchor}
+              data-menuanchor={item.anchor}
+              onClick={() => {
+                location.href = `#${item.anchor}`;
+              }}
+              className={navClasses}
+            >
+              {item.label}
+            </li>
+          ))}
+        </ul>
+      </div>
+
       <ReactFullpage
         credits={{ enabled: false }}
         // navigation={true}
         anchors={["front", "about", "projects", "contact", "footer"]}
         recordHistory={false}
-        loopTop={true}
+        loopTop={false}
         loopBottom={true}
+        menu="#menu"
         render={() => (
           <ReactFullpage.Wrapper>
             <div className="section">
