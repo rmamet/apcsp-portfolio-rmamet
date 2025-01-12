@@ -6,12 +6,12 @@ import Contact from "./Contact";
 
 const App = () => {
   const navClasses =
-    "cursor-pointer flex-auto w-1 inline-block text-black bg-white active:text-white active:bg-slate-700 hover:bg-slate-300 p-2";
+    "cursor-pointer flex-auto w-1 inline-block text-black bg-white active:text-white active:bg-[#05053a] hover:bg-slate-300 p-2";
   return (
     <div className="App w-full">
       <div
         id="menu"
-        className="fixed top-0 left-0 z-50 p-0 m-0 w-full bg-white opacity-85 select-none"
+        className="fixed top-0 left-0 z-50 p-0 m-0 w-full bg-[#05053a] opacity-85 select-none"
       >
         <ul className="flex justify-center align-middle text-center">
           {[
@@ -135,6 +135,21 @@ const App = () => {
                   of a turtle library, along with learning how to make our own
                   functions instead of running everything in the main code loop.
                   My group made a bag with a `:3` symbol on it.
+                </Projects>
+              </div>
+              <div className="slide" data-anchor="slide6">
+                <Projects
+                  ProjName="MASH Project"
+                  DueDate="Jan. 7th, 2025"
+                  ActiveLink="https://mash.rmamet.xyz"
+                  GHLink="https://github.com/IACS-CS/mash-game-fleeberv3-0"
+                  Image="/mash.png"
+                >
+                  The goal for this project was to learn how to use ReactJS's
+                  useState. Although I have already used React for different
+                  projects including this portfolio, it was a great refresher.
+                  My group made the MASH game that has pseudo-random results
+                  using hashing
                 </Projects>
               </div>
             </div>
