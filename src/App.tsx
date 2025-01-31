@@ -3,41 +3,15 @@ import LicenseInfo from "./LicenseInfo";
 import Projects from "./Projects";
 import Joke from "./Joke";
 import Contact from "./Contact";
+import Navbar from "./Navbar";
 
 const App = () => {
-  const navClasses =
-    "cursor-pointer flex-auto w-1 inline-block text-black bg-white active:text-white active:bg-[#05053a] hover:bg-slate-300 p-2";
   return (
     <div className="App w-full">
-      <div
-        id="menu"
-        className="fixed top-0 left-0 z-50 p-0 m-0 w-full bg-[#05053a] opacity-85 select-none"
-      >
-        <ul className="flex justify-center align-middle text-center">
-          {[
-            { anchor: "front", label: "Front" },
-            { anchor: "about", label: "About" },
-            { anchor: "projects", label: "Projects" },
-            { anchor: "contact", label: "Contact" },
-            { anchor: "footer", label: "Footer" },
-          ].map((item) => (
-            <li
-              key={item.anchor}
-              data-menuanchor={item.anchor}
-              onClick={() => {
-                location.href = `#${item.anchor}`;
-              }}
-              className={navClasses}
-            >
-              {item.label}
-            </li>
-          ))}
-        </ul>
-      </div>
+      <Navbar />
 
       <ReactFullpage
         credits={{ enabled: false }}
-        // navigation={true}
         anchors={["front", "about", "projects", "contact", "footer"]}
         recordHistory={false}
         loopTop={false}
@@ -84,7 +58,7 @@ const App = () => {
               </div>
               <div className="slide" data-anchor="slide2">
                 <Projects
-                  ProjName="Binary Search"
+                  ProjName="Binary Search Project"
                   DueDate="Sept. 19th, 2024"
                   ActiveLink="https://fleeber.rmamet.xyz"
                   GHLink="https://github.com/IACS-CS/binary-search-game-fleeber"
@@ -150,6 +124,22 @@ const App = () => {
                   projects including this portfolio, it was a great refresher.
                   My group made the MASH game that has pseudo-random results
                   using hashing
+                </Projects>
+              </div>
+              <div className="slide" data-anchor="slide7">
+                <Projects
+                  ProjName="Image Filter Project"
+                  DueDate="Feb. 6th, 2025"
+                  ActiveLink="https://filter.rmamet.xyz"
+                  GHLink="https://github.com/IACS-CS/image-filter-project-fleeberv4-0"
+                  Closed={true}
+                  Image="/filter.png"
+                >
+                  For this project, we experimented with image editing. The goal
+                  was to implement custom image filters by modifying pixel
+                  values and learning how to manipulate images programmatically.
+                  My group made several different filters, but made a vignette
+                  for the "ultimate challenge".
                 </Projects>
               </div>
             </div>

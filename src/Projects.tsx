@@ -5,6 +5,7 @@ interface ProjProps {
   DueDate: string;
   ActiveLink?: string;
   GHLink?: string;
+  Closed?: boolean;
   Image: string;
   children: ReactNode | string;
 }
@@ -14,6 +15,7 @@ const Projects: React.FC<ProjProps> = ({
   DueDate,
   ActiveLink,
   GHLink,
+  Closed,
   Image,
   children,
 }) => {
@@ -31,9 +33,14 @@ const Projects: React.FC<ProjProps> = ({
               Try it out!
             </a>
           )}{" "}
-          {GHLink && (
+          {GHLink && !Closed && (
             <a href={`${GHLink}`} target="_blank">
               (source code)
+            </a>
+          )}
+          {GHLink && Closed && (
+            <a href={`${GHLink}`} target="_blank">
+              (closed source - APCSP)
             </a>
           )}
         </h3>
