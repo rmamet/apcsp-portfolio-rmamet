@@ -1,9 +1,9 @@
 import ReactFullpage from "@fullpage/react-fullpage";
-import LicenseInfo from "./LicenseInfo";
-import Projects from "./Projects";
-import Joke from "./Joke";
-import Contact from "./Contact";
-import Navbar from "./Navbar";
+import LicenseInfo from "./Elements/Footer/LicenseInfo";
+import Joke from "./Elements/Footer/Joke";
+import Contact from "./Elements/Contact";
+import Navbar from "./Elements/Navbar";
+import ProjectSlides from "./Elements/Projects/ProjectSlides";
 
 const App = () => {
   return (
@@ -53,95 +53,10 @@ const App = () => {
               </div>
             </div>
             <div className="section">
-              <div className="slide" data-anchor="slide1">
+              <div className="slide" data-anchor="main">
                 <h1>Projects</h1>
               </div>
-              <div className="slide" data-anchor="slide2">
-                <Projects
-                  ProjName="Binary Search Project"
-                  DueDate="Sept. 19th, 2024"
-                  ActiveLink="https://fleeber.rmamet.xyz"
-                  GHLink="https://github.com/IACS-CS/binary-search-game-fleeber"
-                  Image="/fleeber.png"
-                >
-                  This project was made to use and learn binary search, having a
-                  limited amount of final outcomes, and seeing the maximum
-                  needed to get to that outcome with sorting. The easiest way of
-                  doing so was with a pile of if statements, to make logical
-                  outcomes from a user's input.
-                </Projects>
-              </div>
-              <div className="slide" data-anchor="slide3">
-                <Projects
-                  ProjName="This Portfolio"
-                  DueDate="Oct. 17th, 2024"
-                  ActiveLink="https://rmamet.xyz"
-                  GHLink="https://github.com/rmamet/apcsp-portfolio-rmamet"
-                  Image="/portfolio.png"
-                >
-                  The goal for this project is to have a place to introduce
-                  myself, and show off my projects and experiences. For this
-                  project I learned how to use fullPage.js to make the
-                  slide-style layout of the website.
-                </Projects>
-              </div>
-              <div className="slide" data-anchor="slide4">
-                <Projects
-                  ProjName="Evolution of the Web Project"
-                  DueDate="Nov. 8th, 2024"
-                  Image="/evoOfWeb.png"
-                >
-                  This project was to research, and tell our class about
-                  something that helped evolve the web to be how we know it
-                  today. For our group, we researched WiFi, and how it works and
-                  was invented.
-                </Projects>
-              </div>
-              <div className="slide" data-anchor="slide5">
-                <Projects
-                  ProjName="Turtle Project"
-                  DueDate="Dec. 3rd, 2024"
-                  ActiveLink="https://turtle.rmamet.xyz"
-                  GHLink="https://github.com/IACS-CS/mini-turtle-project-fleeberv2-0"
-                  Image="/bag.png"
-                >
-                  The goal for this project was to learn the functions and uses
-                  of a turtle library, along with learning how to make our own
-                  functions instead of running everything in the main code loop.
-                  My group made a bag with a `:3` symbol on it.
-                </Projects>
-              </div>
-              <div className="slide" data-anchor="slide6">
-                <Projects
-                  ProjName="MASH Project"
-                  DueDate="Jan. 7th, 2025"
-                  ActiveLink="https://mash.rmamet.xyz"
-                  GHLink="https://github.com/IACS-CS/mash-game-fleeberv3-0"
-                  Image="/mash.png"
-                >
-                  The goal for this project was to learn how to use ReactJS's
-                  useState. Although I have already used React for different
-                  projects including this portfolio, it was a great refresher.
-                  My group made the MASH game that has pseudo-random results
-                  using hashing
-                </Projects>
-              </div>
-              <div className="slide" data-anchor="slide7">
-                <Projects
-                  ProjName="Image Filter Project"
-                  DueDate="Feb. 6th, 2025"
-                  ActiveLink="https://filter.rmamet.xyz"
-                  GHLink="https://github.com/IACS-CS/image-filter-project-fleeberv4-0"
-                  Closed={true}
-                  Image="/filter.png"
-                >
-                  For this project, we experimented with image editing. The goal
-                  was to implement custom image filters by modifying pixel
-                  values and learning how to manipulate images programmatically.
-                  My group made several different filters, but made a vignette
-                  for the "ultimate challenge".
-                </Projects>
-              </div>
+              <ProjectSlides />
             </div>
             <div className="section">
               <h1>Contact</h1>
@@ -169,7 +84,7 @@ const App = () => {
               <Contact />
             </div>
             <div className="section">
-              <div className="slide" data-anchor="slide1">
+              <div className="slide" data-anchor="footer">
                 <h1>Footer</h1>
                 <p className="w-full md:w-1/2 h-auto pl-2 pr-2 ml-auto mr-auto">
                   This is the boring stuff. Continue to the right for
@@ -177,7 +92,7 @@ const App = () => {
                   later
                 </p>
               </div>
-              <div className="slide" data-anchor="slide2">
+              <div className="slide" data-anchor="attributions">
                 <div>
                   <h1>Attributions</h1>
                   <p className="w-full md:w-1/2 h-auto pl-2 pr-2 ml-auto mr-auto">
@@ -211,11 +126,11 @@ const App = () => {
                   </p>
                 </div>
               </div>
-              <div className="slide" data-anchor="slide3">
+              <div className="slide" data-anchor="CopyrightNotice">
                 <h1>Copyright Notice</h1>
                 <LicenseInfo />
               </div>
-              <div className="slide" data-anchor="slide4">
+              <div className="slide" data-anchor="joke">
                 <Joke />
               </div>
             </div>

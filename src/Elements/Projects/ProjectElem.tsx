@@ -19,8 +19,9 @@ const Projects: React.FC<ProjProps> = ({
   Image,
   children,
 }) => {
+  const noSpace = ProjName.replace(/\s/g, "");
   return (
-    <div>
+    <div className="slide" data-anchor={noSpace}>
       <span className="flex">
         <h1 className="flex-auto mr-0 text-right">{ProjName}</h1>
         <p className="flex-auto ml-0 text-left">Done on {DueDate}</p>
