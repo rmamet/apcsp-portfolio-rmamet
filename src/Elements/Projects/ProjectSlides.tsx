@@ -72,6 +72,19 @@ const ProjectSlides = () => {
         how to manipulate images programmatically. My group made several
         different filters, but made a vignette for the "ultimate challenge".
       </Projects>
+      <Projects
+        ProjName="Systems Model Project"
+        DueDate="Mar. 10th, 2025"
+        ActiveLink="https://achoo.rmamet.xyz"
+        GHLink="https://github.com/IACS-CS/systems-project-disease-modeling-fleeberv5-0"
+        Image="/achoo.png"
+      >
+        For this project, we were supposed to simulate a disease that is
+        spreading. For the first challenge, we were tasked with adding a new
+        parameter. My group added an immunity parameter. For the second
+        challenge, we were supposed to recreate an existing disease, and we
+        chose the flu.
+      </Projects>
     </>
   );
 };
