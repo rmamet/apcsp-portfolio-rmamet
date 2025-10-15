@@ -21,7 +21,7 @@ const Contact = () => {
     const formData = { name, email, subject, message };
 
     try {
-      const response = await fetch("https://contactapi.rmamet.xyz", {
+      const response = await fetch("https://api.rmamet.xyz/contacts", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
